@@ -106,111 +106,219 @@ C:\GitHub\Price Reference Portal\Price-Reference-Portal-ASPNET_MVC_CSharp\PriceR
 C:\GitHub\Price Reference Portal\Price-Reference-Portal-ASPNET_MVC_CSharp\PriceReferencePortal\obj\Debug\PriceReferencePortal.csproj.CopyComplete
 C:\GitHub\Price Reference Portal\Price-Reference-Portal-ASPNET_MVC_CSharp\PriceReferencePortal\obj\Debug\PriceReferencePortal.dll
 C:\GitHub\Price Reference Portal\Price-Reference-Portal-ASPNET_MVC_CSharp\PriceReferencePortal\obj\Debug\PriceReferencePortal.pdb
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\PriceReferencePortal.dll.config
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\PriceReferencePortal.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\PriceReferencePortal.pdb
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csc.exe
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csc.exe.config
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csc.rsp
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csi.exe
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csi.exe.config
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csi.rsp
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.Managed.Core.targets
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.Win32.Primitives.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.AppContext.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Collections.Immutable.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Console.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Globalization.Calendars.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.IO.Compression.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.IO.Compression.ZipFile.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.IO.FileSystem.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Net.Http.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Net.Sockets.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Reflection.Metadata.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Threading.Tasks.Extensions.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.ValueTuple.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Xml.XmlDocument.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Xml.XPath.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\vbc.exe
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\vbc.exe.config
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\vbc.rsp
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\VBCSCompiler.exe
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\roslyn\VBCSCompiler.exe.config
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Antlr3.Runtime.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\EntityFramework.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\EntityFramework.SqlServer.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.Core.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Cookies.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Facebook.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Google.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.OAuth.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Twitter.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Web.Infrastructure.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Newtonsoft.Json.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Owin.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Helpers.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Mvc.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Optimization.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Razor.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.Deployment.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.Razor.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\WebGrease.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Helpers.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Mvc.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Optimization.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Razor.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.Deployment.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.Razor.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Newtonsoft.Json.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Antlr3.Runtime.pdb
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\EntityFramework.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\EntityFramework.SqlServer.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.Core.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Facebook.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Cookies.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Google.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Twitter.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.OAuth.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.csprojAssemblyReference.cache
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.csproj.CoreCompileInputs.cache
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.csproj.CopyComplete
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.dll
-C:\GitHub\Price Reference Portal\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.pdb
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\PriceReferencePortal.dll.config
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\PriceReferencePortal.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\PriceReferencePortal.pdb
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csc.exe
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csc.exe.config
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csc.rsp
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csi.exe
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csi.exe.config
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csi.rsp
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.AppContext.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Collections.Immutable.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Console.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Globalization.Calendars.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.IO.Compression.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.IO.FileSystem.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Net.Http.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Net.Sockets.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Reflection.Metadata.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.ValueTuple.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Xml.XPath.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\vbc.exe
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\vbc.exe.config
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\vbc.rsp
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\VBCSCompiler.exe
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\roslyn\VBCSCompiler.exe.config
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Antlr3.Runtime.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\EntityFramework.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\EntityFramework.SqlServer.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Google.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Web.Infrastructure.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Newtonsoft.Json.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Owin.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Helpers.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Mvc.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Optimization.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Razor.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.Deployment.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.Razor.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\WebGrease.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Helpers.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Mvc.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Optimization.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Razor.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.Deployment.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.Razor.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Newtonsoft.Json.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Antlr3.Runtime.pdb
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\EntityFramework.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\EntityFramework.SqlServer.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Google.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.csprojAssemblyReference.cache
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.csproj.CoreCompileInputs.cache
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.csproj.CopyComplete
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.dll
+D:\Location from C\PRP\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.pdb
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\PriceReferencePortal.dll.config
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\PriceReferencePortal.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\PriceReferencePortal.pdb
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csc.exe
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csc.exe.config
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csc.rsp
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csi.exe
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csi.exe.config
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\csi.rsp
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.Managed.Core.targets
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.AppContext.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Collections.Immutable.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Console.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Globalization.Calendars.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.IO.Compression.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.IO.FileSystem.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Net.Http.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Net.Sockets.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Reflection.Metadata.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.ValueTuple.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Xml.XmlDocument.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Xml.XPath.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\vbc.exe
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\vbc.exe.config
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\vbc.rsp
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\VBCSCompiler.exe
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\roslyn\VBCSCompiler.exe.config
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Antlr3.Runtime.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\EntityFramework.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\EntityFramework.SqlServer.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.Core.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Cookies.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Facebook.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Google.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.OAuth.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Twitter.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Web.Infrastructure.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Newtonsoft.Json.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Owin.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Helpers.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Mvc.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Optimization.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Razor.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.Deployment.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.Razor.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\WebGrease.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Helpers.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Mvc.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Optimization.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Razor.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.Deployment.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\System.Web.WebPages.Razor.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Newtonsoft.Json.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Antlr3.Runtime.pdb
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\EntityFramework.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\EntityFramework.SqlServer.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.Core.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Facebook.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Cookies.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Google.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.Twitter.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Owin.Security.OAuth.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.csprojAssemblyReference.cache
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.csproj.CoreCompileInputs.cache
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.csproj.CopyComplete
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.dll
+C:\git\ClientSideRepo\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.pdb
