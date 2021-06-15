@@ -79,12 +79,16 @@ namespace PriceReferencePortal.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
+                    //returnUrl = "/Home/Index";
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
+                    ViewBag.ErrorMessage = "Wrong Username or Password";
+                    //ModelState.AddModelError("", "Wrong Username or Password");
+                    return View(model);
                 default:
                     ModelState.AddModelError("", "Invalid login attempt.");
                     return View(model);
