@@ -1,4 +1,6 @@
-﻿@{
+﻿@using PriceReferencePortal.Models
+@model LoginViewModel
+@{
     ViewBag.Title = "Log in";
     Layout = null;
 }
@@ -27,7 +29,7 @@
 </head>
 
 <body class="bg-gradient-primary">
-    @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "user" }))
+    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "user" }))
     {
         <div class="container">
 
@@ -47,9 +49,14 @@
                                         </div>
                                         <form class="user">
                                             <div class="form-group">
-                                                <input type="email" class="form-control form-control-user"
-                                                       id="exampleInputEmail" aria-describedby="emailHelp"
-                                                       placeholder="Enter Email Address...">
+                                                @Html.TextBoxFor(m => m.Email, new {
+@class = "form-control form-control-user", 
+@id = "exampleInputEmail",
+@aria_describedby = "emailHelp",
+@placeholder = "Enter Email Address..."
+                                           })
+                                                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                                 
                                             </div>
                                             <div class="form-group">
                                                 <input type="password" class="form-control form-control-user"
@@ -74,9 +81,9 @@
                                             <a class="small" href="forgot-password.html">Forgot Password?</a>
                                         </div>
                                         <div class="text-center">
-                                            @*@Html.ActionLink("Register as a new user", "Register")*@
-                                            @*<a class="small" href="register.html">Create an Account!</a>*@
-                                            <a class="small" href="/Account/Register">Create an Account!</a>
+                                            @*<a class="small" href="/Account/Register">Create an Account!</a>*@
+
+                                            @Html.ActionLink("Create an Account", "Register", "", new { @class = "small" })
                                         </div>
                                     </div>
                                 </div>
@@ -100,6 +107,6 @@
         <!-- Custom scripts for all pages-->
         <script src="~/Content/js/sb-admin-2.min.js"></script>
     }
-    </body>
+</body>
 
 </html>
