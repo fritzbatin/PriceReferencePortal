@@ -12,6 +12,9 @@ namespace PriceReferencePortal.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
+        public string Deptartment { get; set; }
+        public bool IsAccountActive { get; set; }
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType

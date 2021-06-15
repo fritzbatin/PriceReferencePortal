@@ -156,7 +156,9 @@ namespace PriceReferencePortal.Controllers
                     FirstName = model.FirstName,
                     LastName = model.LastName,
                     UserName = model.Email,
-                    Email = model.Email
+                    Email = model.Email,
+                    Deptartment = model.Deptartment,
+                    IsAccountActive = model.IsAccountActive
 
                 };
                 var result = await UserManager.CreateAsync(user, model.Password);

@@ -84,6 +84,10 @@ namespace PriceReferencePortal.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        public string Deptartment { get; set; }
+        public bool IsAccountActive { get; set; }
+
     }
 
     public class ResetPasswordViewModel
