@@ -538,3 +538,7 @@ C:\git\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.
 C:\git\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.csproj.CopyComplete
 C:\git\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.dll
 C:\git\PriceReferencePortal\PriceReferencePortal\obj\Debug\PriceReferencePortal.pdb
+C:\git\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Providers.dll
+C:\git\PriceReferencePortal\PriceReferencePortal\bin\System.Web.Providers.xml
+C:\git\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Azure.Mobile.Client.dll
+C:\git\PriceReferencePortal\PriceReferencePortal\bin\Microsoft.Azure.Mobile.Client.xml

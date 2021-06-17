@@ -10,6 +10,7 @@ namespace PriceReferencePortal.Controllers
     {
         public ActionResult Index()
         {
+
             return View();
         }
 

@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
@@ -6,6 +9,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using PriceReferencePortal.Models;
@@ -52,6 +56,53 @@ namespace PriceReferencePortal.Controllers
             }
         }
 
+        public DataTable GetRoleName(string RoleId)
+        {
+            DataTable dt = new DataTable();
+            string strcon = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+
+
+            using (SqlConnection con = new SqlConnection(strcon))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("Select * from AspNetRoles where Id = '" + RoleId + "'", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            return dt;
+        }
+
+        public DataTable GetUserRole(string UserID)
+        {
+            DataTable dt = new DataTable();
+            string strcon = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+
+
+            using (SqlConnection con = new SqlConnection(strcon))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("Select * from AspNetUserRoles where UserId = '" + UserID  + "'", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            return dt;
+        }
+        public DataTable GetUserID(string UserEmail)
+        {
+            DataTable dt = new DataTable();
+            string strcon = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+
+
+            using (SqlConnection con = new SqlConnection(strcon))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("Select * from  AspNetUsers where Email = '" + UserEmail + "'", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            return dt;
+        }
+
         //
         // GET: /Account/Login
         [AllowAnonymous]
@@ -61,6 +112,7 @@ namespace PriceReferencePortal.Controllers
             return View();
         }
 
+      
         //
         // POST: /Account/Login
         [HttpPost]
@@ -72,6 +124,7 @@ namespace PriceReferencePortal.Controllers
             {
                 return View(model);
             }
+           
 
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
@@ -79,7 +132,19 @@ namespace PriceReferencePortal.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    //returnUrl = "/Home/Index";
+                    
+                    var dt_userid = GetUserID(model.Email);
+                    string val_userId = dt_userid.Rows[0]["Id"].ToString(); // Where Fieldname is the name of fields from your database that you want to get
+
+                    var dt_userRoleID = GetUserRole(val_userId);
+                    string val_RoleID = dt_userRoleID.Rows[0]["RoleId"].ToString();
+
+                    var dt_RoleName = GetRoleName(val_RoleID);
+                    string val_Role = dt_RoleName.Rows[0]["Name"].ToString();
+                   
+
+                    Session["Role"] = val_Role;
+
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");

@@ -1,8 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace PriceReferencePortal.Models
 {
+   
+ 
+
     public class ExternalLoginConfirmationViewModel
     {
         [Required]
@@ -48,6 +54,11 @@ namespace PriceReferencePortal.Models
 
     public class LoginViewModel
     {
+ 
+        public string FirstName { get; set; }
+      
+        public string LastName { get; set; }
+
         [Required]
         [Display(Name = "Email")]
         [EmailAddress]
@@ -60,6 +71,11 @@ namespace PriceReferencePortal.Models
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
+
+        public string Deptartment { get; set; }
+        public bool IsAccountActive { get; set; }
+
+        
     }
 
     public class RegisterViewModel
@@ -118,4 +134,6 @@ namespace PriceReferencePortal.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
     }
+
+  
 }
