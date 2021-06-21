@@ -186,6 +186,24 @@
     <Compile Include="Context\AspNetUserRole.cs">
       <DependentUpon>UserRoleEntity.tt</DependentUpon>
     </Compile>
+    <Compile Include="Context\order.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>order.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Order.cs">
+      <DependentUpon>order.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\order.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>order.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Context\order1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>order.tt</DependentUpon>
+    </Compile>
     <Compile Include="Context\supply.cs">
       <DependentUpon>supplyEntity.tt</DependentUpon>
     </Compile>
@@ -222,6 +240,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\SupplyController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -2173,6 +2192,23 @@
       <DependentUpon>supplyEntity.edmx</DependentUpon>
       <LastGenOutput>supplyEntity.cs</LastGenOutput>
     </Content>
+    <EntityDeploy Include="Context\order.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>order.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Context\order.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>order.edmx</DependentUpon>
+      <LastGenOutput>order.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Context\order.edmx.diagram">
+      <DependentUpon>order.edmx</DependentUpon>
+    </Content>
+    <Content Include="Context\order.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>order.edmx</DependentUpon>
+      <LastGenOutput>order1.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2226,6 +2262,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Order\" />
     <Folder Include="Views\View\" />
   </ItemGroup>
   <ItemGroup>

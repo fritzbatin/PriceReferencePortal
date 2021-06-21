@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PriceReferencePortal.Context;
 
 namespace PriceReferencePortal.Controllers
 {
@@ -10,7 +11,12 @@ namespace PriceReferencePortal.Controllers
     {
         public ActionResult Index()
         {
+            using (var context = new supplyEntity())
+            {
 
+                var data = context.supplies.Count(); // Return the list of data from the database
+                Session["Supply Count"] = data.ToString();
+            }
             return View();
         }
 
