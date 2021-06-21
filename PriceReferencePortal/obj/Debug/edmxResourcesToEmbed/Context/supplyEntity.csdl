@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="supply" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="supply">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="vendor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sku" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_lead_time" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="validity" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="date_created" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="created_by" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="supplyEntity" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="supplies" EntityType="Self.supply" />
+  </EntityContainer>
+</Schema>

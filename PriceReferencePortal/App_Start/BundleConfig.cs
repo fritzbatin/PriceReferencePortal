@@ -28,7 +28,15 @@ namespace PriceReferencePortal
             //}
 
 
-        bundles.Add(new ScriptBundle("~/Content/vendor/jquery").Include(
+            //Create bundel for jQueryUI  
+            //js  
+            bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
+                      "~/Scripts/jquery-ui-{version}.js"));
+            //css  
+            bundles.Add(new StyleBundle("~/Content/cssjqryUi").Include(
+                   "~/Content/jquery-ui.css"));
+
+            bundles.Add(new ScriptBundle("~/Content/vendor/jquery").Include(
                     "~/Content/vendor/jquery.js",
                      "~/Content/vendor/jquery.min.js",
                       "~/Content/vendor/jquery.slim.js",

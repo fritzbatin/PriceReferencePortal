@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="supplyStoreContainer" CdmEntityContainer="supplyEntity">
+    <EntitySetMapping Name="supplies">
+      <EntityTypeMapping TypeName="supply.supply">
+        <MappingFragment StoreEntitySet="supply">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="vendor" ColumnName="vendor" />
+          <ScalarProperty Name="sku" ColumnName="sku" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="delivery_lead_time" ColumnName="delivery_lead_time" />
+          <ScalarProperty Name="validity" ColumnName="validity" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

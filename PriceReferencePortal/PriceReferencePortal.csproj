@@ -186,6 +186,24 @@
     <Compile Include="Context\AspNetUserRole.cs">
       <DependentUpon>UserRoleEntity.tt</DependentUpon>
     </Compile>
+    <Compile Include="Context\supply.cs">
+      <DependentUpon>supplyEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\supplyEntity.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supplyEntity.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\supplyEntity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supplyEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\supplyEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supplyEntity.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Context\UserRoleEntity.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -204,6 +222,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SupplyController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2137,6 +2156,23 @@
       <DependentUpon>UserRoleEntity.edmx</DependentUpon>
       <LastGenOutput>UserRoleEntity.cs</LastGenOutput>
     </Content>
+    <EntityDeploy Include="Context\supplyEntity.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>supplyEntity.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Context\supplyEntity.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>supplyEntity.edmx</DependentUpon>
+      <LastGenOutput>supplyEntity.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Context\supplyEntity.edmx.diagram">
+      <DependentUpon>supplyEntity.edmx</DependentUpon>
+    </Content>
+    <Content Include="Context\supplyEntity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>supplyEntity.edmx</DependentUpon>
+      <LastGenOutput>supplyEntity.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2184,9 +2220,13 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Supply\Display.cshtml" />
+    <Content Include="Views\Supply\Update.cshtml" />
+    <Content Include="Views\Supply\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\View\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
