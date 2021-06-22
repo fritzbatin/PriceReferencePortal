@@ -40,6 +40,8 @@ namespace PriceReferencePortal
                 var user = new ApplicationUser();
                 user.UserName = "admin@email.com";
                 user.Email = "admin@email.com";
+                user.FirstName = "Admin";
+                user.LastName = "admin";
                 string userPWD = "Qwe!23";
 
                 IdentityResult chkUser = UserManager.Create(user, userPWD);

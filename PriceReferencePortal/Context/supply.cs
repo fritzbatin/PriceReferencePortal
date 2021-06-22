@@ -20,13 +20,22 @@ namespace PriceReferencePortal.Context
     public partial class supply
     {
         public int Id { get; set; }
+        [Display(Name = "Vendor")]
         public string vendor { get; set; }
+        [Display(Name = "SKU")]
         public string sku { get; set; }
+        [Display(Name = "Description")]
         public string description { get; set; }
+        [Display(Name = "Price")]
         public string price { get; set; }
+        [Display(Name = "Delivery lead time")]
         public string delivery_lead_time { get; set; }
+        [Display(Name = "Validity")]
         public string validity { get; set; }
+        [Display(Name = "Date update")]
         public string date_created { get; set; }
+        [Display(Name = "Created by")]
         public string created_by { get; set; }
     }
+  
 }

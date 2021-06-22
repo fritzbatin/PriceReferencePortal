@@ -6,11 +6,10 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
+    <h2>Supply</h2>
 
     <div class="container-fluid">
 
-        <!-- Page Heading -->
-        <h1 class="h3 mb-2 text-gray-800">Supply</h1>
 
         <p>
             @Html.ActionLink("Create New", "Create")

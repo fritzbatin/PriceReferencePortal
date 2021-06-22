@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -28,12 +31,33 @@ namespace PriceReferencePortal.Controllers
 
         }
 
+        public DataTable GetUserID(string UserEmail)
+        {
+            DataTable dt = new DataTable();
+            string strcon = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+
+
+            using (SqlConnection con = new SqlConnection(strcon))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("Select * from  AspNetUsers where Email = '" + UserEmail + "'", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            return dt;
+        }
 
         // GET: Supply/Create
         public ActionResult Create()
         {
             ViewBag.DateCreated = DateTime.Now.ToString("dd-MMM-yyyy");
-            ViewBag.CreatedBy = User.Identity.GetUserName();
+            //ViewBag.CreatedBy = User.Identity.GetUserName();
+
+            var dt_userid = GetUserID(User.Identity.GetUserName());
+            string val_FirstName = dt_userid.Rows[0]["FirstName"].ToString();
+            string val_LastName = dt_userid.Rows[0]["LastName"].ToString();
+            ViewBag.CreatedBy = $"{val_FirstName} {val_LastName}";
+
             return View();
         }
 
@@ -91,15 +115,19 @@ namespace PriceReferencePortal.Controllers
         }
 
         // GET: Supply/Delete/5
-        public ActionResult Delete()
+        public ActionResult Delete(int id)
         {
-            return View();
+            using (var context = new supplyEntity())
+            {
+                var data = context.supplies.Where(x => x.Id == id).SingleOrDefault();
+                return View(data);
+            }
         }
 
         // POST: Supply/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id)
+        public ActionResult Delete(int id, FormCollection collection)
         {
             using (var context = new supplyEntity())
             {

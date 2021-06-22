@@ -32,7 +32,7 @@
                 try
                 {
                     var role = Session["Role"].ToString();
-                   
+
                 }
                 catch (Exception)
                 {
@@ -77,14 +77,15 @@
                         <span>Supplies</span>
                     </a>
                 </li>
-
+                <!-- Nav Item - Purchase -->
                 <li class="nav-item">
-                    <a class="nav-link" href="charts.html">
+                    <a class="nav-link" href="/Order/Display">
                         <i class="fas fa-fw fa-luggage-cart"></i>
                         <span>Purchase Order</span>
                     </a>
                 </li>
 
+                <!-- Nav Item - Procurement Bidding -->
                 <li class="nav-item">
                     <a class="nav-link" href="charts.html">
                         <i class="fas fa-fw fa-file-invoice-dollar"></i>
@@ -92,6 +93,7 @@
                     </a>
                 </li>
 
+                <!-- Nav Item - Budget Request -->
                 <li class="nav-item">
                     <a class="nav-link" href="charts.html">
                         <i class="fas fa-fw fa-dollar-sign"></i>
@@ -135,10 +137,10 @@
 
                 <!-- Sidebar Message -->
                 <!--<div class="sidebar-card d-none d-lg-flex">
-                    <img class="sidebar-card-illustration mb-2" src="~/Content/img/undraw_rocket.svg" alt="...">
-                    <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-                    <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
-                </div>-->
+        <img class="sidebar-card-illustration mb-2" src="~/Content/img/undraw_rocket.svg" alt="...">
+        <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
+        <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
+    </div>-->
 
             </ul>
             <!-- End of Sidebar -->
@@ -193,10 +195,12 @@
 
                                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    @{
+                                        var user_name = Session["UserName"].ToString();
+                                    }
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"> @user_name </span>
 
-                                    @*<span class="mr-2 d-none d-lg-inline text-gray-600 small"> @role </span>*@
-
-                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small"> @User.Identity.GetUserName() </span>
+                                    @*<span class="mr-2 d-none d-lg-inline text-gray-600 small"> @User.Identity.GetUserName() </span>*@
 
                                     <img class="img-profile rounded-circle"
                                          src="~/Content/img/undraw_profile.svg">
@@ -298,11 +302,11 @@
         <script src="~/Content/js/demo/chart-pie-demo.js"></script>
 
         <!-- Bootstrap core JavaScript-->
-        <script src="~/Content/vendor/datatables/jquery.dataTables.min.js"></script>
-        <script src="~/Content/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="~/Content/vendor/datatables/jquery.dataTables.js"></script>
+        <script src="~/Content/vendor/datatables/dataTables.bootstrap4.js"></script>
 
         <script src="~/Content/js/demo/datatables-demo.js"></script>
-        <link href="~/Content/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" />
+        <link href="~/Content/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet" />
 
         @Scripts.Render("~/Content/vendor/jquery")
         @Scripts.Render("~/Content/vendor/bootstrap")

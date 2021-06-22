@@ -186,23 +186,23 @@
     <Compile Include="Context\AspNetUserRole.cs">
       <DependentUpon>UserRoleEntity.tt</DependentUpon>
     </Compile>
-    <Compile Include="Context\order.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>order.Context.tt</DependentUpon>
-    </Compile>
     <Compile Include="Context\Order.cs">
-      <DependentUpon>order.tt</DependentUpon>
+      <DependentUpon>orderEntity.tt</DependentUpon>
     </Compile>
-    <Compile Include="Context\order.Designer.cs">
+    <Compile Include="Context\orderEntity.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>order.edmx</DependentUpon>
+      <DependentUpon>orderEntity.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Context\order1.cs">
+    <Compile Include="Context\orderEntity.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>order.tt</DependentUpon>
+      <DependentUpon>orderEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\orderEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>orderEntity.edmx</DependentUpon>
     </Compile>
     <Compile Include="Context\supply.cs">
       <DependentUpon>supplyEntity.tt</DependentUpon>
@@ -2192,22 +2192,22 @@
       <DependentUpon>supplyEntity.edmx</DependentUpon>
       <LastGenOutput>supplyEntity.cs</LastGenOutput>
     </Content>
-    <EntityDeploy Include="Context\order.edmx">
+    <EntityDeploy Include="Context\orderEntity.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>order.Designer.cs</LastGenOutput>
+      <LastGenOutput>orderEntity.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Context\order.Context.tt">
+    <Content Include="Context\orderEntity.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>order.edmx</DependentUpon>
-      <LastGenOutput>order.Context.cs</LastGenOutput>
+      <DependentUpon>orderEntity.edmx</DependentUpon>
+      <LastGenOutput>orderEntity.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Context\order.edmx.diagram">
-      <DependentUpon>order.edmx</DependentUpon>
+    <Content Include="Context\orderEntity.edmx.diagram">
+      <DependentUpon>orderEntity.edmx</DependentUpon>
     </Content>
-    <Content Include="Context\order.tt">
+    <Content Include="Context\orderEntity.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>order.edmx</DependentUpon>
-      <LastGenOutput>order1.cs</LastGenOutput>
+      <DependentUpon>orderEntity.edmx</DependentUpon>
+      <LastGenOutput>orderEntity.cs</LastGenOutput>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -2259,10 +2259,13 @@
     <Content Include="Views\Supply\Display.cshtml" />
     <Content Include="Views\Supply\Update.cshtml" />
     <Content Include="Views\Supply\Create.cshtml" />
+    <Content Include="Views\Order\Display.cshtml" />
+    <Content Include="Views\Supply\Delete.cshtml" />
+    <Content Include="Views\Order\Create.cshtml" />
+    <Content Include="Views\Order\ViewSupply.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Order\" />
     <Folder Include="Views\View\" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="orderStoreContainer" CdmEntityContainer="orderEntities">
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="order.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="supply_ids" ColumnName="supply_ids" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="procurement_approval" ColumnName="procurement_approval" />
+          <ScalarProperty Name="proc_approval_date" ColumnName="proc_approval_date" />
+          <ScalarProperty Name="proc_approve_by" ColumnName="proc_approve_by" />
+          <ScalarProperty Name="accounting_approval" ColumnName="accounting_approval" />
+          <ScalarProperty Name="acc_approve_date" ColumnName="acc_approve_date" />
+          <ScalarProperty Name="acc_approve_by" ColumnName="acc_approve_by" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

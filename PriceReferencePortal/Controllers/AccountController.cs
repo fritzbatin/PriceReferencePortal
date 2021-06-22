@@ -135,15 +135,17 @@ namespace PriceReferencePortal.Controllers
                     
                     var dt_userid = GetUserID(model.Email);
                     string val_userId = dt_userid.Rows[0]["Id"].ToString(); // Where Fieldname is the name of fields from your database that you want to get
+                    string val_FirstName = dt_userid.Rows[0]["FirstName"].ToString();
+                    string val_LastName = dt_userid.Rows[0]["LastName"].ToString();
 
                     var dt_userRoleID = GetUserRole(val_userId);
                     string val_RoleID = dt_userRoleID.Rows[0]["RoleId"].ToString();
 
                     var dt_RoleName = GetRoleName(val_RoleID);
                     string val_Role = dt_RoleName.Rows[0]["Name"].ToString();
-                   
 
                     Session["Role"] = val_Role;
+                    Session["UserName"] = $"{val_FirstName} {val_LastName}";
 
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
