@@ -12,9 +12,10 @@ namespace PriceReferencePortal.Context
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+
     public partial class supplyEntity : DbContext
     {
+
         public supplyEntity()
             : base("name=supplyEntity")
         {
@@ -26,5 +27,9 @@ namespace PriceReferencePortal.Context
         }
     
         public virtual DbSet<supply> supplies { get; set; }
+
+      
+
+        public System.Data.Entity.DbSet<PriceReferencePortal.Context.orderDetail> orderDetails { get; set; }
     }
 }

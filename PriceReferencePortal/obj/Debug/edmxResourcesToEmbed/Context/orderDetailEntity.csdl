@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="orderDetail" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="orderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ordernumber" Type="Int32" Nullable="false" />
+    <Property Name="supplyId" Type="Int32" Nullable="false" />
+    <Property Name="vendor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="sku" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="delivery_lead_time" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="validity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="date_created" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="qty" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="totalAmount" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="orderDetailEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="orderDetails" EntityType="Self.orderDetail" />
+  </EntityContainer>
+</Schema>

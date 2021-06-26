@@ -1,0 +1,109 @@
+﻿@model IEnumerable<PriceReferencePortal.Context.orderDetail>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <h2>Purchase Order</h2>
+
+    <div class="container-fluid">
+
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Item List</h6>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table id="1dataTable" class="display table-bordered table" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ordernumber)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.supplyId)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.vendor)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.sku)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.description)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.delivery_lead_time)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.validity)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.date_created)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.price)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.qty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.totalAmount)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ordernumber)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.supplyId)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.vendor)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.sku)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.description)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.delivery_lead_time)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.validity)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.date_created)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.price)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.qty)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.totalAmount)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Update", "UpdateOrderDetail", new { orderId = item.Id }) |
+                                    @Html.ActionLink("Delete", "DeleteOrderDetail", new { orderId = item.Id })
+                                </td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+<!-- Begin Page Content -->

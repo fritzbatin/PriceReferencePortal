@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="supply_ids" Type="nvarchar(max)" />
     <Property Name="date_created" Type="nvarchar" MaxLength="50" />
     <Property Name="created_by" Type="nvarchar(max)" />

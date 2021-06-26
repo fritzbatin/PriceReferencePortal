@@ -13,10 +13,10 @@ namespace PriceReferencePortal.Context
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class orderEntities : DbContext
+    public partial class orderDetailEntities : DbContext
     {
-        public orderEntities()
-            : base("name=orderEntities")
+        public orderDetailEntities()
+            : base("name=orderDetailEntities")
         {
         }
     
@@ -25,8 +25,6 @@ namespace PriceReferencePortal.Context
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Order> Orders { get; set; }
-
-        public System.Data.Entity.DbSet<PriceReferencePortal.Context.orderDetail> orderDetails { get; set; }
+        public virtual DbSet<orderDetail> orderDetails { get; set; }
     }
 }

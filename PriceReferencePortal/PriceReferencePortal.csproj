@@ -189,6 +189,24 @@
     <Compile Include="Context\Order.cs">
       <DependentUpon>orderEntity.tt</DependentUpon>
     </Compile>
+    <Compile Include="Context\orderDetail.cs">
+      <DependentUpon>orderDetailEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\orderDetailEntity.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>orderDetailEntity.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\orderDetailEntity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>orderDetailEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Context\orderDetailEntity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>orderDetailEntity.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Context\orderEntity.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -2209,6 +2227,23 @@
       <DependentUpon>orderEntity.edmx</DependentUpon>
       <LastGenOutput>orderEntity.cs</LastGenOutput>
     </Content>
+    <EntityDeploy Include="Context\orderDetailEntity.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>orderDetailEntity.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Context\orderDetailEntity.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>orderDetailEntity.edmx</DependentUpon>
+      <LastGenOutput>orderDetailEntity.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Context\orderDetailEntity.edmx.diagram">
+      <DependentUpon>orderDetailEntity.edmx</DependentUpon>
+    </Content>
+    <Content Include="Context\orderDetailEntity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>orderDetailEntity.edmx</DependentUpon>
+      <LastGenOutput>orderDetailEntity.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2263,6 +2298,16 @@
     <Content Include="Views\Supply\Delete.cshtml" />
     <Content Include="Views\Order\Create.cshtml" />
     <Content Include="Views\Order\ViewSupply.cshtml" />
+    <Content Include="Views\Order\GetOrder.cshtml" />
+    <Content Include="Views\Order\ViewOrderDetail.cshtml" />
+    <Content Include="Views\Order\UpdateOrderDetail.cshtml" />
+    <Content Include="Views\Order\DeleteOrderDetail.cshtml" />
+    <Content Include="Views\Order\ViewOrderDetail_order.cshtml" />
+    <Content Include="Views\Order\order_UpdateOrderDetail.cshtml" />
+    <Content Include="Views\Order\UpdateOrder.cshtml" />
+    <Content Include="Views\Order\order_DeleteOrderDetail.cshtml" />
+    <Content Include="Views\Order\order_updateGetOrder.cshtml" />
+    <Content Include="Views\Order\order_UpdateViewSupply.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

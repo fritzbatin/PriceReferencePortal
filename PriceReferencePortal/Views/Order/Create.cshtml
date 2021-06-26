@@ -8,7 +8,7 @@
 <div class="container-fluid">
     <h2>Create</h2>
 
-    @using (Html.BeginForm())
+    @using (Html.BeginForm("Create", "Order"))
     {
         @Html.AntiForgeryToken()
 
@@ -16,13 +16,13 @@
     <h4>Order</h4>
     <hr />
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-    @*<div class="form-group">
-            @Html.LabelFor(model => model.Id, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Id, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
-            </div>
-        </div>*@
+    <div class="form-group">
+        @Html.LabelFor(model => model.Id, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Id, new { htmlAttributes = new { @class = "form-control", @readonly = true, @Value = ViewBag.orderLastId } })
+            @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
+        </div>
+    </div>
 
     @*<div class="form-group">
             @Html.LabelFor(model => model.supply_ids, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -47,11 +47,23 @@
             @Html.ValidationMessageFor(model => model.created_by, "", new { @class = "text-danger" })
         </div>
     </div>
-    
-   
-        @Html.Action("ViewSupply", "Order")
-   
+    @{ 
+        var idd = ViewBag.orderLastId;
+    }
+<div class="form-group">
+    @{
+        Html.RenderAction("ViewOrderDetail", "Order");
+    }
+</div>
 
+
+<div class="form-group">
+    <div class="col-md-10">
+        @{
+            Html.RenderAction("ViewSupply", "Order");
+        }
+    </div>
+</div>
 
     @*<div class="form-group">
             @Html.LabelFor(model => model.procurement_approval, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -110,6 +122,6 @@
     }
 
     <div>
-        @Html.ActionLink("Back to List", "Index")
+        @Html.ActionLink("Back to List", "Display")
     </div>
 </div>
