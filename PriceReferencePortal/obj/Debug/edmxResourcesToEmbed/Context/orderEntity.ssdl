@@ -14,6 +14,9 @@
     <Property Name="accounting_approval" Type="nvarchar" MaxLength="50" />
     <Property Name="acc_approve_date" Type="nvarchar" MaxLength="50" />
     <Property Name="acc_approve_by" Type="nvarchar(max)" />
+    <Property Name="terms_and_condition" Type="nvarchar(max)" />
+    <Property Name="totalPayment" Type="nvarchar(max)" />
+    <Property Name="delivery_status" Type="nvarchar(max)" />
   </EntityType>
   <EntityContainer Name="orderStoreContainer">
     <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />

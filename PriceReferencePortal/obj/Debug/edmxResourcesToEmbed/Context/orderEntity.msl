@@ -4,6 +4,9 @@
     <EntitySetMapping Name="Orders">
       <EntityTypeMapping TypeName="order.Order">
         <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="delivery_status" ColumnName="delivery_status" />
+          <ScalarProperty Name="totalPayment" ColumnName="totalPayment" />
+          <ScalarProperty Name="terms_and_condition" ColumnName="terms_and_condition" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="supply_ids" ColumnName="supply_ids" />
           <ScalarProperty Name="date_created" ColumnName="date_created" />

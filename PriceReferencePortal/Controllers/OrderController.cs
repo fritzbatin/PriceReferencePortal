@@ -118,7 +118,7 @@ namespace PriceReferencePortal.Controllers
             {
                 model.procurement_approval = "Pending";
                 model.accounting_approval = "Pending";
-           
+                model.delivery_status = "Pending";
 
                 context.Orders.Add(model); // Add data to the particular table
                 context.SaveChanges(); // save the changes to the that are made

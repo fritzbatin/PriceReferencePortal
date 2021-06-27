@@ -22,7 +22,7 @@ namespace PriceReferencePortal.Context
 
         [Display(Name = "Date Update")]
         public string date_created { get; set; }
-        [Display(Name = "Supply ID")]
+        [Display(Name = "Created by")]
         public string created_by { get; set; }
         [Display(Name = "Status (Procurement)")]
         public string procurement_approval { get; set; }
@@ -36,5 +36,14 @@ namespace PriceReferencePortal.Context
         public string acc_approve_date { get; set; }
         [Display(Name = "Approved by (Accounting)")]
         public string acc_approve_by { get; set; }
+
+
+        [Display(Name = "Terms and Condition")]
+        public string terms_and_condition { get; set; }
+        [Display(Name = "Total Payment")]
+        public string totalPayment { get; set; }
+        [Display(Name = "Delivery Status")]
+        public string delivery_status { get; set; }
+
     }
 }

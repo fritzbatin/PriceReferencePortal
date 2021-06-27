@@ -1,6 +1,7 @@
 ﻿@using Microsoft.AspNet.Identity
 @using PriceReferencePortal.Models
 
+@{ var role="";}
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,7 +32,7 @@
             @{
                 try
                 {
-                    var role = Session["Role"].ToString();
+                    role = Session["Role"].ToString();
 
                 }
                 catch (Exception)
@@ -70,63 +71,98 @@
                 <div class="sidebar-heading">
                     Interface
                 </div>
-                <!-- Nav Item - Supplies -->
-                <li class="nav-item">
-                    <a class="nav-link" href="/Supply/Display">
-                        <i class="fas fa-fw fa-pencil-ruler"></i>
-                        <span>Supplies</span>
-                    </a>
-                </li>
-                <!-- Nav Item - Purchase -->
-                <li class="nav-item">
-                    <a class="nav-link" href="/Order/Display">
-                        <i class="fas fa-fw fa-luggage-cart"></i>
-                        <span>Purchase Order</span>
-                    </a>
-                </li>
+                @if (role == "Admin" || role == "Purchasing")
+                {
+                    <!-- Nav Item - Supplies -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Supply/Display">
+                            <i class="fas fa-fw fa-pencil-ruler"></i>
+                            <span>Supplies</span>
+                        </a>
+                    </li>
+                    <!-- Nav Item - Purchase -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Order/Display">
+                            <i class="fas fa-fw fa-luggage-cart"></i>
+                            <span>Purchase Order</span>
+                        </a>
+                    </li>
 
-                <!-- Nav Item - Procurement Bidding -->
-                <li class="nav-item">
-                    <a class="nav-link" href="charts.html">
-                        <i class="fas fa-fw fa-file-invoice-dollar"></i>
-                        <span>Procurement Bidding</span>
-                    </a>
-                </li>
+                    <!-- Nav Item - Procurement Bidding -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Proc/display">
+                            <i class="fas fa-fw fa-file-invoice-dollar"></i>
+                            <span>Procurement Bidding</span>
+                        </a>
+                    </li>
 
-                <!-- Nav Item - Budget Request -->
-                <li class="nav-item">
-                    <a class="nav-link" href="charts.html">
-                        <i class="fas fa-fw fa-dollar-sign"></i>
-                        <span>Budget Request</span>
-                    </a>
-                </li>
+                    <!-- Nav Item - Budget Request -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="charts.html">
+                            <i class="fas fa-fw fa-dollar-sign"></i>
+                            <span>Budget Request</span>
+                        </a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="charts.html">
-                        <i class="fas fa-fw fa-truck-loading"></i>
-                        <span>Delivery</span>
-                    </a>
-                </li>
+                    <!-- Nav Item - Budget Request -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="charts.html">
+                            <i class="fas fa-fw fa-truck-loading"></i>
+                            <span>Delivery</span>
+                        </a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="charts.html">
-                        <i class="fas fa-fw fa-chart-area"></i>
-                        <span>Report</span>
-                    </a>
-                </li>
+                }
+                else if (role == "Accounting")
+                {
+                    <!-- Nav Item - Budget Request -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="charts.html">
+                            <i class="fas fa-fw fa-dollar-sign"></i>
+                            <span>Budget Request</span>
+                        </a>
+                    </li>
+                }
+                else if (role == "Logistic")
+                {
+                    <!-- Nav Item - Procurement Bidding -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Proc/display">
+                            <i class="fas fa-fw fa-file-invoice-dollar"></i>
+                            <span>Procurement Bidding</span>
+                        </a>
+                    </li>
+                }
+                else
+                {
+                    <!-- Nav Item - Purchase -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Order/Display">
+                            <i class="fas fa-fw fa-luggage-cart"></i>
+                            <span>Purchase Order</span>
+                        </a>
+                    </li>
+                }
+
+
+
+
+                @*<li class="nav-item">
+            <a class="nav-link" href="charts.html">
+                <i class="fas fa-fw fa-chart-area"></i>
+                <span>Records</span>
+            </a>
+        </li>*@
 
                 <!-- Nav Item - Pages Collapse Menu -->
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                       aria-expanded="true" aria-controls="collapseTwo">
-                        <i class="fas fa-fw fa-cog"></i>
-                        <span>Accounts</span>
-                    </a>
+                <!--<li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+           aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Accounts</span>
+        </a>
 
-                </li>
-
-
-
+    </li>-->
                 <!-- Divider -->
                 <hr class="sidebar-divider d-none d-md-block">
 
@@ -137,10 +173,10 @@
 
                 <!-- Sidebar Message -->
                 <!--<div class="sidebar-card d-none d-lg-flex">
-                    <img class="sidebar-card-illustration mb-2" src="~/Content/img/undraw_rocket.svg" alt="...">
-                    <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-                    <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
-                </div>-->
+        <img class="sidebar-card-illustration mb-2" src="~/Content/img/undraw_rocket.svg" alt="...">
+        <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
+        <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
+    </div>-->
 
             </ul>
             <!-- End of Sidebar -->

@@ -49,6 +49,17 @@ namespace PriceReferencePortal
                     id = UrlParameter.Optional
                 });
 
+
+            routes.MapRoute(
+                "Details",
+                "Proc/Details/{id}",
+                new
+                {
+                    Controller = "Proc",
+                    action = "Details",
+                    id = UrlParameter.Optional
+                });
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

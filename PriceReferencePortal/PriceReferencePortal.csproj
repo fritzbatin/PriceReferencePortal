@@ -259,6 +259,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\ProcController.cs" />
     <Compile Include="Controllers\SupplyController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -266,6 +267,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\roleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -2308,6 +2310,10 @@
     <Content Include="Views\Order\order_DeleteOrderDetail.cshtml" />
     <Content Include="Views\Order\order_updateGetOrder.cshtml" />
     <Content Include="Views\Order\order_UpdateViewSupply.cshtml" />
+    <Content Include="Views\Order\DeleteOrder.cshtml" />
+    <Content Include="Views\Proc\display.cshtml" />
+    <Content Include="Views\Proc\Details.cshtml" />
+    <Content Include="Views\Proc\ViewOrderDetail_order.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

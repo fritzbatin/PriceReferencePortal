@@ -11,12 +11,71 @@ namespace PriceReferencePortal.Controllers
     {
         public ActionResult Index()
         {
-            using (var context = new supplyEntity())
+            using (var context = new orderEntities())
             {
+                //var data = context.Orders.Count(); // Return the list of data from the database
+                var d = context.Orders.Where(dd => dd.procurement_approval == ""  ).Count();
 
-                var data = context.supplies.Count(); // Return the list of data from the database
-                Session["Supply Count"] = data.ToString();
+
+                var procPendingCount = (from o in context.Orders
+                             where o.procurement_approval == "Pending"
+                             select o).Count();
+                Session["procPendingCount"] = procPendingCount.ToString();
+
+                var procApprovedCount = (from o in context.Orders
+                                        where o.procurement_approval == "Approved"
+                                        select o).Count();
+                Session["procApprovedCount"] = procApprovedCount.ToString();
+
+                var procDisapprovedCount = (from o in context.Orders
+                                         where o.procurement_approval == "Disapproved"
+                                         select o).Count();
+                Session["procDisapprovedCount"] = procDisapprovedCount.ToString();
+
+
+                var accPendingCount = (from a in context.Orders
+                                       where a.accounting_approval == "Pending" &&
+                                         a.procurement_approval == "Approved"
+                                        select a).Count();
+                Session["accPendingCount"] = accPendingCount.ToString();
+
+
+                var accApprovalCount = (from a in context.Orders
+                                   where a.accounting_approval == "Approved"
+                                   select a).Count();
+                Session["accApprovalCount"] = accApprovalCount.ToString();
+
+                var accDisapprovedCount = (from a in context.Orders
+                                        where a.accounting_approval == "Disapproved"
+                                        select a).Count();
+                Session["accDisapprovedCount"] = accDisapprovedCount.ToString();
+
+
+
+
+
+                var deliveryPendingCount = (from dd in context.Orders
+                                       where dd.delivery_status == "Pending" &&
+                                       dd.accounting_approval == "Approved"
+                                       select dd).Count();
+                Session["deliveryPendingCount"] = deliveryPendingCount.ToString();
+
+
+                var deliveryApprovalCount = (from dd in context.Orders
+                                        where dd.delivery_status == "For Delivery"
+                                        select d).Count();
+                Session["deliveryApprovalCount"] = deliveryApprovalCount.ToString();
+
+                var deliveryDisapprovedCount = (from dd in context.Orders
+                                           where dd.delivery_status == "Disapproved"
+                                           select dd).Count();
+                Session["deliveryDisapprovedCount"] = deliveryDisapprovedCount.ToString();
+
+
+
+
             }
+            
             return View();
         }
 

@@ -1,0 +1,120 @@
+﻿@model PriceReferencePortal.Context.Order
+
+@{
+    ViewBag.Title = "DeleteOrder";
+}
+
+<h2>DeleteOrder</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.supply_ids)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.supply_ids)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_created)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_created)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.created_by)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.created_by)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.procurement_approval)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.procurement_approval)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.proc_approval_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.proc_approval_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.proc_approve_by)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.proc_approve_by)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.accounting_approval)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.accounting_approval)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.acc_approve_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.acc_approve_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.acc_approve_by)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.acc_approve_by)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.terms_and_condition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.terms_and_condition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalPayment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalPayment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.delivery_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.delivery_status)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Display")
+        </div>
+    }
+</div>

@@ -1,0 +1,64 @@
+﻿@model PriceReferencePortal.Context.Order
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="container-fluid">
+
+    <h2>Details</h2>
+    <div class="container-fluid">
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+        <div class="form-horizontal">
+            <h4>Order</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Id, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Id, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.date_created, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.date_created, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.date_created, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.created_by, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.created_by, new { htmlAttributes = new { @class = "form-control", @readonly = true } })
+                    @Html.ValidationMessageFor(model => model.created_by, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @{
+                    Html.RenderAction("ViewOrderDetail_order", new { id = Model.Id });
+                }
+            </div>
+            
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+
+                    <input type="submit" name="submitButton" value="Approved" class="btn btn-default" /> |
+                    <input type="submit" name="submitButton" value="Disapproved" class="btn btn-default" />
+                </div>
+            </div>
+
+        </div>
+        }
+
+        <div>
+            @Html.ActionLink("Back to List", "display")
+        </div>
+    </div>
+</div>

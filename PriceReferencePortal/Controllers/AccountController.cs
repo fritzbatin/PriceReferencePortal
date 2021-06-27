@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -205,14 +206,17 @@ namespace PriceReferencePortal.Controllers
             }
         }
 
+        
         //
         // GET: /Account/Register
         [AllowAnonymous]
         public ActionResult Register()
         {
+            
+
             return View();
         }
-
+        
         //
         // POST: /Account/Register
         [HttpPost]
@@ -220,6 +224,8 @@ namespace PriceReferencePortal.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
+            
+
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser
@@ -232,18 +238,21 @@ namespace PriceReferencePortal.Controllers
                     IsAccountActive = model.IsAccountActive
 
                 };
+               
+                
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
+                    var result1 = UserManager.AddToRole(user.Id, model.Deptartment);
+
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Login");
                 }
                 AddErrors(result);
             }
