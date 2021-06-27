@@ -172,6 +172,7 @@ namespace PriceReferencePortal.Controllers
         [ValidateAntiForgeryToken] // To specify that this will be invoked when post method is called
         public ActionResult UpdateOrderDetail(int orderId, orderDetail model)
         {
+
             using (var context = new orderDetailEntities())
             {
                 var data = context.orderDetails.FirstOrDefault(y => y.Id == orderId); // Use of lambda expression to access particular record from a database
@@ -310,8 +311,15 @@ namespace PriceReferencePortal.Controllers
         [ValidateAntiForgeryToken] // To specify that this will be invoked when post method is called
         public ActionResult UpdateOrder(int id, Order model)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
             using (var context = new orderEntities())
             {
+
+                
                 var data = context.Orders.FirstOrDefault(y => y.Id == id); // Use of lambda expression to access particular record from a database
                 if (data != null) // Checking if any such record exist 
                 {
@@ -327,7 +335,8 @@ namespace PriceReferencePortal.Controllers
                     //data.price = model.price;
                     data.created_by = model.created_by;
                     data.supply_ids = model.supply_ids;
-                    data.date_created = DateTime.Now.ToString("dd-MMM-yyyy"); 
+                    data.date_created = DateTime.Now.ToString("dd-MMM-yyyy");
+                    data.totalPayment = model.totalPayment;
                     context.SaveChanges();
                     return RedirectToAction("Display"); // It will redirect to the Read method
                 }

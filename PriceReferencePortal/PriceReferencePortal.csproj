@@ -256,6 +256,7 @@
       <DependentUpon>UserRoleEntity.edmx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AccountingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
@@ -2314,6 +2315,9 @@
     <Content Include="Views\Proc\display.cshtml" />
     <Content Include="Views\Proc\Details.cshtml" />
     <Content Include="Views\Proc\ViewOrderDetail_order.cshtml" />
+    <Content Include="Views\Accounting\display.cshtml" />
+    <Content Include="Views\Accounting\accDetails.cshtml" />
+    <Content Include="Views\Accounting\ViewOrderDetail_order.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

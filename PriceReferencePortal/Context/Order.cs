@@ -15,6 +15,8 @@ namespace PriceReferencePortal.Context
 
     public partial class Order
     {
+        public IEnumerable<string> Errors { get; }
+
         [Display(Name="Order number")]
         public int Id { get; set; }
         [Display(Name = "Supply ID")]
@@ -37,9 +39,10 @@ namespace PriceReferencePortal.Context
         [Display(Name = "Approved by (Accounting)")]
         public string acc_approve_by { get; set; }
 
-
         [Display(Name = "Terms and Condition")]
         public string terms_and_condition { get; set; }
+
+        [Required(ErrorMessage = "Insert amounts payable.")]
         [Display(Name = "Total Payment")]
         public string totalPayment { get; set; }
         [Display(Name = "Delivery Status")]

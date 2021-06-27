@@ -61,6 +61,17 @@ namespace PriceReferencePortal
                 });
 
             routes.MapRoute(
+                "accDetails",
+                "Accounting/accDetails/{id}",
+                new
+                {
+                    Controller = "Accounting",
+                    action = "accDetails",
+                    id = UrlParameter.Optional
+                });
+            
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                  defaults: new

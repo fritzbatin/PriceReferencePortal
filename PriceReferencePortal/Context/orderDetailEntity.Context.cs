@@ -26,5 +26,7 @@ namespace PriceReferencePortal.Context
         }
     
         public virtual DbSet<orderDetail> orderDetails { get; set; }
+
+        public System.Data.Entity.DbSet<PriceReferencePortal.Context.Order> Orders { get; set; }
     }
 }
