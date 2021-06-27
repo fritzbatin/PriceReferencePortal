@@ -1,0 +1,126 @@
+﻿@model IEnumerable<PriceReferencePortal.Context.Order>
+
+@{
+    ViewBag.Title = "Delivery";
+}
+
+<h2>For Delivery</h2>
+
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Item List</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Id)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.date_created)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.created_by)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.procurement_approval)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.proc_approval_date)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.proc_approve_by)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.accounting_approval)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.acc_approve_date)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.acc_approve_by)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Id)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.date_created)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.created_by)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.procurement_approval)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.proc_approval_date)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.proc_approve_by)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.accounting_approval)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.acc_approve_date)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.acc_approve_by)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Id)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.date_created)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.created_by)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.procurement_approval)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.proc_approval_date)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.proc_approve_by)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.accounting_approval)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.acc_approve_date)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.acc_approve_by)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Details", "deliveryDetails", new { id = item.Id })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

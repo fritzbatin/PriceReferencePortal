@@ -257,6 +257,7 @@
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AccountingController.cs" />
+    <Compile Include="Controllers\DeliveryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
@@ -2318,6 +2319,9 @@
     <Content Include="Views\Accounting\display.cshtml" />
     <Content Include="Views\Accounting\accDetails.cshtml" />
     <Content Include="Views\Accounting\ViewOrderDetail_order.cshtml" />
+    <Content Include="Views\Delivery\display.cshtml" />
+    <Content Include="Views\Delivery\deliveryDetails.cshtml" />
+    <Content Include="Views\Delivery\ViewOrderDetail_order.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

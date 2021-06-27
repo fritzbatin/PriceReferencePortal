@@ -42,7 +42,7 @@ namespace PriceReferencePortal.Controllers
             using (var context = new orderEntities())
             {
 
-                var data = context.Orders.Where(x => x.procurement_approval == "Approved").ToList(); // Return the list of data from the database
+                var data = context.Orders.Where(x => x.delivery_status == "For Delivery").ToList(); // Return the list of data from the database
                 return View(data);
             }
         }
